@@ -1,4 +1,4 @@
-package com.example.githubusersapp.view.activity
+package com.example.consumerapp.view.activity
 
 import android.content.Intent
 import android.database.ContentObserver
@@ -6,29 +6,32 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
+import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.githubusersapp.R
-import com.example.githubusersapp.adapter.ListAdapter
-import com.example.githubusersapp.data.database.DatabaseContract.FavoriteColumn.Companion.CONTENT_URI
-import com.example.githubusersapp.helper.MappingHelper
-import com.example.githubusersapp.model.User
+import com.example.consumerapp.R
+import com.example.consumerapp.adapter.ListAdapter
+import com.example.consumerapp.data.database.DatabaseContract.FavoriteColumn.Companion.CONTENT_URI
+import com.example.consumerapp.helper.MappingHelper
+import com.example.consumerapp.model.User
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.activity_favorite.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
-class FavoriteActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
+
     private lateinit var listAdapter: ListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favorite)
+        setContentView(R.layout.activity_main)
 
-        val titleActionBar = getString(R.string.title_action_bar_favorite)
+        val titleActionBar = resources.getString(R.string.title_action_bar_favorite)
         supportActionBar?.title = titleActionBar
 
         val handlerThread = HandlerThread("DataObserver")
@@ -49,7 +52,7 @@ class FavoriteActivity : AppCompatActivity() {
 
         listAdapter.setOnItemClickCallback(object : ListAdapter.OnItemClickCallback {
             override fun onItemClicked(data: User) {
-                val detailIntent = Intent(this@FavoriteActivity, DetailActivity::class.java)
+                val detailIntent = Intent(this@MainActivity, DetailActivity::class.java)
                 detailIntent.putExtra(DetailActivity.EXTRA_PARCEL_DATA, data)
                 startActivity(detailIntent)
             }
@@ -59,14 +62,16 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_favorite, menu)
-        return super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_settings){
-            val settingsIntent = Intent(this@FavoriteActivity, SettingsActivity::class.java)
-            startActivity(settingsIntent)
+        when (item.itemId) {
+            R.id.menu_language -> {
+                val settingsIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+                startActivity(settingsIntent)
+            }
         }
         return super.onOptionsItemSelected(item)
     }

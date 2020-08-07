@@ -1,7 +1,7 @@
 package com.example.consumerapp.helper
 
 import android.database.Cursor
-import com.example.consumerapp.database.DatabaseContract.FavoriteColumn
+import com.example.consumerapp.data.database.DatabaseContract.FavoriteColumn
 import com.example.consumerapp.model.User
 
 object MappingHelper {

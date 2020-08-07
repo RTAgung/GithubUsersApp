@@ -38,7 +38,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         userFavoriteDao = FavoriteDatabase.init(this).userFavoriteDao()
-        val user = intent.getParcelableExtra(EXTRA_PARCEL_DATA) as User
+        user = intent.getParcelableExtra(EXTRA_PARCEL_DATA) as User
 
         titleActionBar = user.login.toString()
         supportActionBar?.title = titleActionBar
