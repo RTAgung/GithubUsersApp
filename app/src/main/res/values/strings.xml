@@ -33,4 +33,6 @@
     <string name="alarm_title">Reminder to Open App</string>
     <string name="alarm_active">Alarm Active</string>
     <string name="alarm_non_active">Alarm Non Active</string>
+    <string name="remove_favorite">Favorite Removed</string>
+    <string name="add_favorite">Favorite Added</string>
 </resources>

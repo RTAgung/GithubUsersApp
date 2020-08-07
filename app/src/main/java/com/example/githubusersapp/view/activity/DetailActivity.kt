@@ -80,10 +80,10 @@ class DetailActivity : AppCompatActivity() {
     private fun onClickFavorite() {
         if (isFavorite) {
             userFavoriteDao.delete(user)
-            Toast.makeText(this, "Remove Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.remove_favorite), Toast.LENGTH_SHORT).show()
         } else {
             userFavoriteDao.insert(user)
-            Toast.makeText(this, "Add Favorite", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.add_favorite), Toast.LENGTH_SHORT).show()
         }
         isFavorite = !isFavorite
         changeFavorite()

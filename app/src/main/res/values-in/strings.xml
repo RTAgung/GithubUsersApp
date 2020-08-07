@@ -32,4 +32,8 @@
     <string name="set_title_language">Ganti Bahasa</string>
     <string name="alarm_message">Ayo cek pengguna github terpopuler</string>
     <string name="alarm_title">Pengingat untuk membuka aplikasi</string>
+    <string name="alarm_active">Alarm Aktif</string>
+    <string name="alarm_non_active">Alarm Tidak Aktif</string>
+    <string name="remove_favorite">Favorit Dihapus</string>
+    <string name="add_favorite">Favorit Ditambah</string>
 </resources>
