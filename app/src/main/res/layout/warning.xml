@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/warning"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_warning"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/text_warning"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_warning"
+        android:src="@drawable/ic_baseline_warning_48" />
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_warning"
+        android:layout_centerHorizontal="true"
+        android:text="@string/error" />
+
+    <TextView
+        android:id="@+id/text_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_error"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="start"
+        android:maxLines="4"
+        android:text="@string/error_message"
+        android:textSize="12sp" />
+</RelativeLayout>

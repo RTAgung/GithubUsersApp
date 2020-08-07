@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubUsersApp</string>
+    <string name="title_action_bar">Pengguna Github</string>
+    <string name="menu_search">Pencarian</string>
+    <string name="menu_language">Ganti Bahasa</string>
+    <string name="search_hint">Masukkan Nama</string>
+    <string name="cd_user_avatar">Photo Pengguna</string>
+    <string name="user_login">Nama Pengguna</string>
+    <string name="menu_refresh">Segarkan</string>
+    <string name="user_name">Nama</string>
+    <string name="user_location">Lokasi</string>
+    <string name="user_company">Perusahaan</string>
+    <string name="user_bio">Bio</string>
+    <string name="user_repos">Repositories : %1$d</string>
+    <string name="followers">%1$d\nPengikut</string>
+    <string name="following">%1$d\nMengikuti</string>
+    <string name="loading">Memuat...</string>
+    <string name="warning">Peringatan!</string>
+    <string name="image_warning">gambar peringatan</string>
+    <string name="error">Kesalahan</string>
+    <string name="error_message">pesan kesalahan</string>
+    <string name="settings">Pengaturan</string>
+    <string name="favorite">Favorit</string>
+    <string name="title_action_bar_favorite">Favorit</string>
+    <string name="snackbar_no_data">Tidak Ada Data</string>
+    <string name="title_action_bar_settings">Pengaturan</string>
+    <string name="set_key_alarm">set_alarm</string>
+    <string name="set_sum_alarm">Berulang setiap hari pada 09.00 am</string>
+    <string name="set_title_alarm">Pasang Alarm</string>
+    <string name="set_key_language">set_language</string>
+    <string name="set_title_language">Ganti Bahasa</string>
+    <string name="alarm_message">Ayo cek pengguna github terpopuler</string>
+    <string name="alarm_title">Pengingat untuk membuka aplikasi</string>
+</resources>

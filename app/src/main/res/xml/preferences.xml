@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="true">
+    <SwitchPreference
+        android:icon="@drawable/ic_baseline_alarm_48"
+        android:key="@string/set_key_alarm"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/set_sum_alarm"
+        android:title="@string/set_title_alarm"
+        app:iconSpaceReserved="true" />
+
+    <Preference
+        android:icon="@drawable/ic_baseline_language_24"
+        android:key="@string/set_key_language"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/set_title_language"
+        app:iconSpaceReserved="true">
+        <intent android:action="android.settings.LOCALE_SETTINGS" />
+    </Preference>
+</PreferenceScreen>
