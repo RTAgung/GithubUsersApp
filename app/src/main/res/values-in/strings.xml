@@ -2,8 +2,6 @@
 <resources>
     <string name="app_name">GithubUsersApp</string>
     <string name="title_action_bar">Pengguna Github</string>
-    <string name="menu_search">Pencarian</string>
-    <string name="menu_language">Ganti Bahasa</string>
     <string name="search_hint">Masukkan Nama</string>
     <string name="cd_user_avatar">Photo Pengguna</string>
     <string name="user_login">Nama Pengguna</string>
@@ -36,4 +34,5 @@
     <string name="alarm_non_active">Alarm Tidak Aktif</string>
     <string name="remove_favorite">Favorit Dihapus</string>
     <string name="add_favorite">Favorit Ditambah</string>
+    <string name="appwidget_text">Daftar Favorit</string>
 </resources>

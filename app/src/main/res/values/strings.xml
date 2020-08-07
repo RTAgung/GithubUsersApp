@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">GithubUsersApp</string>
     <string name="title_action_bar">Github Users</string>
-    <string name="menu_search">Search</string>
-    <string name="menu_language">Change Language</string>
     <string name="search_hint">Enter Name</string>
     <string name="cd_user_avatar">User Avatar</string>
     <string name="user_login">Username</string>
@@ -35,4 +33,5 @@
     <string name="alarm_non_active">Alarm Non Active</string>
     <string name="remove_favorite">Favorite Removed</string>
     <string name="add_favorite">Favorite Added</string>
+    <string name="appwidget_text">Favorites List</string>
 </resources>

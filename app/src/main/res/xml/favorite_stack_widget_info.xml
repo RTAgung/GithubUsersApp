@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/favorite_stack_widget"
+    android:initialLayout="@layout/favorite_stack_widget"
+    android:resizeMode="horizontal"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:previewImage="@drawable/ic_baseline_widgets_24"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen" />
